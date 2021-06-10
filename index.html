@@ -6,6 +6,8 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="/dist/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Stats preview card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -16,14 +18,43 @@
 </head>
 <body>
 
-  Get insights that help your business grow.
+  <div class="main">
+    <div class="box">
+          <div class="box__image"> <img src="/images/image-header-mobile.jpg"><div class="overlay"></div> </div>
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
 
-  10k+ companies
-  314 templates
-  12m+ queries
+      
+         
+      <div class="box__text">
+   
+        <div class="box__text-title">
+               Get <span>insights </span> that help your business grow.
+        </div>
+        
+        <div class="box__text-description">
+                  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+        experience, and overall efficiency.
+        </div>
+        <div class="flex">
+          <div class="box__text-companies">
+            10k+ <span>companies</span> 
+          </div>
+          <div class="box__text-templates">
+             314 <span>templates</span>
+          </div>
+          <div class="box_-text-queries">
+            12m+ <span>queries</span>
+          </div>
+        </div>
+
+        
+      </div>
+
+
+    </div>
+  </div>
+
+
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
