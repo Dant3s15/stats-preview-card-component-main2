@@ -25,10 +25,23 @@ body {
   margin-top: 6.25rem;
 }
 
+@media (min-width: 900px) {
+  .box {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    margin: 235px 120px;
+  }
+}
+
 .box__image {
   -o-object-fit: contain;
      object-fit: contain;
   position: relative;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }
 
 .box__image img {
@@ -37,15 +50,31 @@ body {
   max-width: 100%;
 }
 
+.box__text {
+  padding: 5.9375rem;
+}
+
 .box__text-title {
   font-size: 1.75rem;
   font-weight: 700;
   color: white;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-  padding-top: 3.125rem;
   padding-bottom: 2.0625rem;
   text-align: center;
+}
+
+@media (max-width: 900px) {
+  .box__text-title {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 3.125rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .box__text-title {
+    text-align: start;
+    font-size: 2.375rem;
+  }
 }
 
 .box__text-title span {
@@ -53,17 +82,26 @@ body {
 }
 
 .box__text-description {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
   padding-bottom: 3.75rem;
   text-align: center;
   color: rgba(255, 255, 255, 0.6);
 }
 
+@media (max-width: 900px) {
+  .box__text-description {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .box__text-description {
+    text-align: start;
+  }
+}
+
 .box__text .flex {
   color: white;
-  padding-left: 1.125rem;
-  padding-right: 1.125rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -79,6 +117,13 @@ body {
   text-align: center;
 }
 
+@media (max-width: 900px) {
+  .box__text .flex {
+    padding-left: 1.125rem;
+    padding-right: 1.125rem;
+  }
+}
+
 .box__text .flex span {
   padding-top: 1.0625rem;
   display: block;
@@ -87,8 +132,26 @@ body {
   text-transform: uppercase;
 }
 
-.box__text .flex > * {
-  padding-bottom: 2.625rem;
+@media (min-width: 900px) {
+  .box__text .flex {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 33% 33% 33%;
+        grid-template-columns: 33% 33% 33%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .box__text .flex > * {
+    padding-bottom: 2.625rem;
+  }
 }
 
 .overlay {
