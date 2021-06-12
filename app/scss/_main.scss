@@ -2,13 +2,6 @@ body{
      background-color: $veryDarkBlue;
 }
 
-// .main{
-
-
-
-
-// }
-
 .box{
     display: block;
     color: $slightlyTransparetnWhiteMain;
@@ -18,21 +11,14 @@ body{
     overflow: auto;
     max-width:100%;
     max-height:100%;  
-    // height: auto;  
     margin-top: 6.25rem;
     @media (min-width:1200px){
-        // display: flex;
-        // flex-direction: row;
         display: grid;
         grid-template-columns: 50% 50%;
         margin: 235px 120px;
     }
   &__image-desktop{
-    //   border: 5px solid red;
         display: grid;
-   
-        // background-image: url(/images/image-header-mobile.jpg);
- 
         position: relative;
         order: 1;
         
@@ -44,17 +30,13 @@ body{
 
         img{
             position: absolute;
-            // border: 5px solid red;
             display: block;
             align-self: center;
             justify-self: center;
- 
-            // vertical-align: top;
             background-repeat: no-repeat;
             height: 100%;
             width: 100%;
             object-fit: cover;
-            // max-width: 100%;
             @media (max-width:1200px) {
                 max-width: 0;
             }
@@ -65,7 +47,6 @@ body{
     }
     &__image-mobile{
         display: grid;
-        // background-image: url(/images/image-header-mobile.jpg);
         object-fit: contain;
         position: relative;
         order: 2;
@@ -78,14 +59,11 @@ body{
         img{
    
             display: block;
-   
-            // vertical-align: top;
             background-repeat: no-repeat;
             height: 100%;
             width: 100%;
             object-fit: cover;
 
-            // max-width: 100%;
             @media (min-width:1200px) {
                 max-width: 0;
             }
@@ -175,8 +153,6 @@ body{
             @media (max-width: 1200px){
                 padding-bottom: 2.625rem;
             }
-         
-            // padding-right: 85px ;
         }
 
     }
